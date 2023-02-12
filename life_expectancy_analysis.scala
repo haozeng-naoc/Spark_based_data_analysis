@@ -67,4 +67,39 @@ lifeDF.printSchema()
 
 // COMMAND ----------
 
+lifeDF.createOrReplaceTempView("lifeData")
+
+// COMMAND ----------
+
+// MAGIC %md
+// MAGIC ### 从临时表中展示数据
+
+// COMMAND ----------
+
+// MAGIC %sql
+// MAGIC 
+// MAGIC select * from lifeData;
+
+// COMMAND ----------
+
+// MAGIC %md
+// MAGIC ### 人均寿命柱状图
+
+// COMMAND ----------
+
+// MAGIC %sql
+// MAGIC select Life_expectancy from lifeData;
+
+// COMMAND ----------
+
+// MAGIC %md
+// MAGIC ### 婴儿死亡柱状图
+
+// COMMAND ----------
+
+// MAGIC %sql
+// MAGIC select infant_deaths from LifeData;
+
+// COMMAND ----------
+
 
