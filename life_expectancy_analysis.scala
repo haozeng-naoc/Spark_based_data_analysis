@@ -102,4 +102,10 @@ lifeDF.createOrReplaceTempView("lifeData")
 
 // COMMAND ----------
 
+// MAGIC %sql
+// MAGIC 
+// MAGIC select Life_expectancy,Adult_Mortality from lifeData
+
+// COMMAND ----------
+
 
