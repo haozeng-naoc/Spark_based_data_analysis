@@ -132,7 +132,11 @@ display(dbutils.fs.ls('file:/databricks/driver'))
 
 # COMMAND ----------
 
+!kaggle datasets list -s 'Crimes'
 
+# COMMAND ----------
+
+!kaggle datasets download -d 'currie32/crimes-in-chicago'
 
 # COMMAND ----------
 
